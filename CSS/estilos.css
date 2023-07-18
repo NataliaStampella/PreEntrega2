@@ -3,17 +3,15 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-family: 'Ysabeau Office', sans-serif;
 }
+/*-------Estilado de Header ------------*/
 .navbar-light .navbar-nav .nav-link.colorVerde{
     color: #25BD9F;
+}
 
-}
-/*.navbar-light .navbar-nav .nav-link.colorLila{
-    color: #6A1592;
-}
-*/
 .bgColorNav{
-    background-color: rgb(235, 217, 200) ;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); 
 }
+
 .navLinkEstilo{
     font-weight: 400;
     font-size: 1.5rem;
@@ -28,49 +26,29 @@ body{
     height: 20%;
 }
 
-/*aca comienza el estilado del main*/
-.divPresentacion{
-    text-align: center;
-    margin:4% ;
-}
-
-
-.carousel-item{
-    height: 80vh;
-    width: 100%;
-}
-
-.carousel-item img{
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-}
-
-
+/*-------Estilado de Footer------------*/
 .estiloFooter{
-    background-color: rgb(127, 215, 209);
+    background-color: rgb(55, 91, 89);
 }
-/*.ulFooterLogos{
-    display: flex;
-    list-style: none;
-}*/
+
 .navFooter{
-    background-color: rgb(127, 215, 209);  
+    background-color: rgb(55, 91, 89); 
 }
 
 .divMapa{
     padding-left: 5%;
 }
+
 .ulDatosFooter{
     list-style-type: none;
-    font-size: larger;
-    
-    
+    font-size: larger; 
+    color: white;   
 }
+
 .list-group-item{  
   
   text-decoration: none;
-  background-color: rgb(127, 215, 209);
+  background-color: rgb(55, 91, 89);
 
   border: none;
 
@@ -88,10 +66,139 @@ body{
     font-size: 1.5rem;
     text-align: center;
     margin-top: 5%;
+    color: white;
+
+}
+
+/*-------Estilado de Main Index------------*/
+.divPresentacion{
+    text-align: center;
+    margin:4% ;
+    font-size: larger;
+    background: #a9d1c5;
+    background: linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);
+    background: -webkit-linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);
+    background: -moz-linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);
+    padding: 2%;
+    
+}
+
+.carousel-item{
+    height: 80vh;
+    width: 100%;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.divCarousel{
+    padding-bottom: 6%;
+}
+/*-------Estilado de Main Servicios------------*/
+.divServicios{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    background: #a9d1c5;
+    background: linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);
+    background: -webkit-linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);
+    background: -moz-linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);
+    padding: 1.5%;
+    font-size: larger;
+}
+
+.grupoServicios{
+    margin-bottom: 4%;
+}
+
+.card-title{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+
+.card-text{
+    text-align: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.tituloServicios{
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+.parrafoServicios{
+
+}
+/*-------Estilado de Main Adopciones------------*/
+.card-img-top{
+    width: 100%;
+    height: 40vh;
+}
+
+.divAdopciones{
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: large;
+    background: #a9d1c5;
+    background: linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);
+    background: -webkit-linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);
+    background: -moz-linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);
+    padding: 1.5%;
+}
+
+.parrafoAdopciones{
+    font-size: larger;
+}
+
+.cardAdopciones{
+    padding-bottom: 5%;
+}
+
+/*-------Estilado de Main Quienes Somos------------*/
+.cardQuienes{
+    width: 70%;
+}
+
+.divConocenos{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-align: center;
+    background: #a9d1c5;
+    background: linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);
+    background: -webkit-linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);
+    background: -moz-linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);
+    padding: 1.5%;
+}
+.parrafoConocenos{
+    font-size:x-large;
+}
+/*-------Estilado de Main Contacto------------*/
+.bg-container {
+    background-image: url('../Assets/img/background\ image\ 3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid black;
+    
+}
+.botonFormulario{
+    background-color: #25BD9F;
+    font-size: larger;
 
 }
 
 
+
+/*-------Estilado de Responsive------------*/
   @media (min-width: 400px) and (max-width: 779px){
 
     
@@ -106,7 +213,16 @@ body{
             height: 20%;
             
         }
-      
+        .bg-container {
+            background-image: url('../Assets/img/background\ image\ 3.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+    .cardForm{
+        width: 75% ;
+    }
+          
   }
 
 
