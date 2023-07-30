@@ -1,3 +1,5 @@
+@import 'variables';
+
 /*-------Estilado de Footer------------*/
 .estiloFooter{
     background-color: $color-verde;
@@ -13,8 +15,8 @@
 
 .ulDatosFooter{
     list-style-type: none;
-    font-size: larger; 
-    color: white;   
+    font-size: $letras-parrafo; 
+    color: $color-blanco;   
 }
 
 .list-group-item{  
@@ -35,5 +37,5 @@
     font-size: 1.5rem;
     text-align: center;
     margin-top: 5%;
-    color: white;
+    color: $color-blanco;
 }

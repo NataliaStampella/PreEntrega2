@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 /*-------Estilado de Main Quienes Somos------------*/
 .cardQuienes{
     width: 70%;
@@ -8,14 +10,12 @@
     margin-bottom: 3%;
     text-align: center;
     background: #a9d1c5;
-    background: linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);
-    /*background: -webkit-linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);
-    background: -moz-linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);*/
+    background: $degradado-color-verde;
     padding: 1.5%;
-    box-shadow: 0 0 8px 4px rgba(126, 156, 115, 0.3), 0 0 16px 8px rgba(126, 156, 115, 0.2), 0 0 24px 12px rgba(126, 156, 115, 0.1);
+    box-shadow: $sombra-verde;
 }
 .parrafoConocenos{
-    font-size:x-large;
+    font-size:$letras-parrafo;
 }
 .shadowCardConocenos{
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);

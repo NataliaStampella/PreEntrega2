@@ -1,0 +1,10 @@
+@import 'variables.scss';
+
+.divComun{
+    text-align: center;
+    margin:4% ;
+    font-size: $letras-parrafo;
+    background: $degradado-color-verde;
+    padding: 1.5%;
+    box-shadow: $sombra-verde;
+}
