@@ -15,32 +15,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Ysabeau+Office:wght@100;300;500&display=swap');
 
 
-/*-------Estilado de Responsive------------*/
-  @media (min-width: 400px) and (max-width: 779px){
-
-    
-    .navFooter{
-            background-color: rgb(127, 215, 209);
-            justify-content: center;
-            
-        }
-
-        .estiloLogo{
-            margin-left:40%; 
-            height: 20%;
-            
-        }
-        .bg-container {
-            background-image: url('../Assets/img/background\ image\ 3.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-          }
-    .cardForm{
-        width: 75% ;
-    }
-          
-  }
 
 
   

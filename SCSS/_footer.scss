@@ -1,13 +1,18 @@
-@import 'variables';
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'utilidades.scss';
 
 /*-------Estilado de Footer------------*/
+
+/*-------Anidacion de Footer------------*/
+
 .estiloFooter{
     background-color: $color-verde;
-}
+
 
 .navFooter{
     background-color: $color-verde; 
-}
+
 
 .divMapa{
     padding-left: 5%;
@@ -19,19 +24,19 @@
     color: $color-blanco;   
 }
 
-.list-group-item{  
+
+
+.divRedes{
+    padding-right: 5%;
+
+  .redes{
+    @include altura-ancho(80%, 80%);
+  }
+  .list-group-item{  
   text-decoration: none;
   background-color: $color-verde;
   border: none;
 }
-
-.divRedes{
-    padding-right: 5%;
-}
-  .redes{
-    width: 80%;
-    height: 80%;
-  }
 
 .tituloRedes{
     font-size: 1.5rem;
@@ -39,3 +44,19 @@
     margin-top: 5%;
     color: $color-blanco;
 }
+}
+}
+}
+
+
+
+/*-------Estilado de Responsive------------*/
+@media (min-width: 400px) and (max-width: 779px){
+
+    
+    .navFooter{
+            
+        justify-content: center;
+            
+        }
+    }

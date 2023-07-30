@@ -1,3 +1,6 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'utilidades.scss';
 /*-------Estilado de Main Contacto------------*/
 .bg-container {
     background-image: url('../Assets/img/background\ image\ 3.jpg');
@@ -21,4 +24,18 @@
     box-shadow: $sombra-naranja;
   }
   
+  /*-------Estilado de Responsive------------*/
+  @media (min-width: 400px) and (max-width: 779px){
+    .bg-container {
+        background-image: url('../Assets/img/background\ image\ 3.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+.cardForm{
+    width: 75% ;
+}
+      
+}
+
   

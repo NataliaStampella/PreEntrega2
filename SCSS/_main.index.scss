@@ -7,12 +7,12 @@
 }
 
 .carousel-item{
-    @include estilo-imagenes(80vh, 100%);
+    @include altura-ancho(80vh, 100%);
   
 }
 
 .carousel-item img{
-    @include estilo-imagenes(100%, 100%);
+    @include altura-ancho(100%, 100%);
     object-fit:cover;
 }
 
@@ -23,8 +23,7 @@
 .publicidad-horizontal {
     display: block;
     margin: 0 auto;
-    width: 80%; 
-    height: auto;
+    @include altura-ancho(auto, 80%);
     margin-top: 1%;
     
   }
