@@ -1,0 +1,36 @@
+/*-------Estilado de Main Index------------*/
+.divPresentacion{
+    text-align: center;
+    margin:4% ;
+    font-size: larger;
+    background: #a9d1c5;
+    background: $degradado-color-verde;
+    /*background: -webkit-linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);
+    background: -moz-linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);*/
+    padding: 1.5%;
+    box-shadow: 0 0 8px 4px rgba(126, 156, 115, 0.3), 0 0 16px 8px rgba(126, 156, 115, 0.2), 0 0 24px 12px rgba(126, 156, 115, 0.1);
+}
+
+.carousel-item{
+    height: 80vh;
+    width: 100%;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.divCarousel{
+    padding-bottom: 4%;
+}
+
+.publicidad-horizontal {
+    display: block;
+    margin: 0 auto;
+    width: 80%; 
+    height: auto;
+    margin-top: 1%;
+    
+  }

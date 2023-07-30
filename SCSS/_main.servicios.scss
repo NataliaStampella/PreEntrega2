@@ -1,0 +1,37 @@
+/*-------Estilado de Main Servicios------------*/
+.divServicios{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    background: #a9d1c5;
+    background: linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);
+    /*background: -webkit-linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);
+    background: -moz-linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);*/
+    padding: 1.5%;
+    font-size: larger;
+    box-shadow: 0 0 8px 4px rgba(126, 156, 115, 0.3), 0 0 16px 8px rgba(126, 156, 115, 0.2), 0 0 24px 12px rgba(126, 156, 115, 0.1);
+}
+
+.grupoServicios{
+    margin-bottom: 4%;
+}
+
+.card-title{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.card-text{
+    text-align: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.shadowCardServicios{
+    box-shadow: 0 0 8px 4px rgba(69, 49, 21, 0.3), 0 0 16px 8px rgba(69, 49, 21, 0.2), 0 0 24px 12px rgba(69, 49, 21, 0.1);
+}
+
+.tituloServicios{
+    margin-top: 2%;
+    margin-bottom: 3%;
+}

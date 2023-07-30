@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Ysabeau+Office:wght@100;300;500&display=swap");
-body {
-  font-family: "Ysabeau Office", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*-------Estilado de Header ------------*/
@@ -24,6 +26,10 @@ body {
   margin-right: 30px;
   width: 20%;
   height: 20%;
+}
+
+body {
+  font-family: "Ysabeau Office", sans-serif;
 }
 
 /*-------Estilado de Footer------------*/
@@ -110,8 +116,8 @@ body {
   margin-bottom: 5%;
   background: #a9d1c5;
   background: linear-gradient(180deg, #a9d1c5 0%, #d5e5dc 80%);
-  background: -webkit-linear-gradient(180deg, #a9d1c5 0%, #d5e5dc 80%);
-  background: -moz-linear-gradient(180deg, #a9d1c5 0%, #d5e5dc 80%);
+  /*background: -webkit-linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);
+  background: -moz-linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);*/
   padding: 1.5%;
   font-size: larger;
   box-shadow: 0 0 8px 4px rgba(126, 156, 115, 0.3), 0 0 16px 8px rgba(126, 156, 115, 0.2), 0 0 24px 12px rgba(126, 156, 115, 0.1);
@@ -154,8 +160,8 @@ body {
   font-size: large;
   background: #a9d1c5;
   background: linear-gradient(180deg, #a9d1c5 0%, #d5e5dc 80%);
-  background: -webkit-linear-gradient(180deg, #a9d1c5 0%, #d5e5dc 80%);
-  background: -moz-linear-gradient(180deg, #a9d1c5 0%, #d5e5dc 80%);
+  /*background: -webkit-linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);
+  background: -moz-linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);*/
   padding: 1.5%;
   box-shadow: 0 0 8px 4px rgba(126, 156, 115, 0.3), 0 0 16px 8px rgba(126, 156, 115, 0.2), 0 0 24px 12px rgba(126, 156, 115, 0.1);
 }
@@ -183,8 +189,8 @@ body {
   text-align: center;
   background: #a9d1c5;
   background: linear-gradient(180deg, #a9d1c5 0%, #d5e5dc 80%);
-  background: -webkit-linear-gradient(180deg, #a9d1c5 0%, #d5e5dc 80%);
-  background: -moz-linear-gradient(180deg, #a9d1c5 0%, #d5e5dc 80%);
+  /*background: -webkit-linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);
+  background: -moz-linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);*/
   padding: 1.5%;
   box-shadow: 0 0 8px 4px rgba(126, 156, 115, 0.3), 0 0 16px 8px rgba(126, 156, 115, 0.2), 0 0 24px 12px rgba(126, 156, 115, 0.1);
 }

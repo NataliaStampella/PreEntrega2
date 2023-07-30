@@ -1,0 +1,39 @@
+/*-------Estilado de Footer------------*/
+.estiloFooter{
+    background-color: $color-verde;
+}
+
+.navFooter{
+    background-color: $color-verde; 
+}
+
+.divMapa{
+    padding-left: 5%;
+}
+
+.ulDatosFooter{
+    list-style-type: none;
+    font-size: larger; 
+    color: white;   
+}
+
+.list-group-item{  
+  text-decoration: none;
+  background-color: $color-verde;
+  border: none;
+}
+
+.divRedes{
+    padding-right: 5%;
+}
+  .redes{
+    width: 80%;
+    height: 80%;
+  }
+
+.tituloRedes{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 5%;
+    color: white;
+}
