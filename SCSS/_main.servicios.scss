@@ -1,16 +1,12 @@
 /*-------Estilado de Main Servicios------------*/
 @import 'variables.scss';
+@import 'mixins.scss';
+@import 'utilidades.scss';
 
-.divServicios{
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 5%;
-    background: #a9d1c5;
-    background: $degradado-color-verde;
-    padding: 1.5%;
-    font-size: $letras-parrafo;
-    box-shadow: $sombra-verde;
-}
+.divConocenos{
+        @extend .divComun;
+    }
+
 
 .grupoServicios{
     margin-bottom: 4%;
