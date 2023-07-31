@@ -1,15 +1,23 @@
 $tipografia-general: 'Ysabeau Office', sans-serif;
+
 $color-verde: rgb(55, 91, 89);
+$color-blanco: white;
+
 $degradado-color-verde: linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);
 $degradado-color-arena: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-$color-blanco: white;
+
 $sombra-verde: 0 0 8px 4px rgba(126, 156, 115, 0.3), 0 0 16px 8px rgba(126, 156, 115, 0.2), 0 0 24px 12px rgba(126, 156, 115, 0.1);
 $sombra-oscura-cards: 0 0 8px 4px rgba(69, 49, 21, 0.3), 0 0 16px 8px rgba(69, 49, 21, 0.2), 0 0 24px 12px rgba(69, 49, 21, 0.1);
 $sombra-lila-cards: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(102, 51, 153, 0.5);
 $sombra-naranja: 0 0 20px 10px rgba(255, 165, 0, 0.5), 0 0 40px 20px rgba(255, 0, 0, 0.5);
 
-
 $letras-parrafo: x-large;
 $letras-descripcion: large;
+
+/*-------------mapa-------------*/
+$alineaciones: (
+    text-align: center,
+    align-items: center,
+)
 
 

@@ -1,5 +1,8 @@
+@charset "UTF-8";
+/*-------------mapa-------------*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Ysabeau+Office:wght@100;300;500&display=swap");
-.divComun, .divAdopciones, .divConocenos, .divPresentacion {
+/*-------------mapa-------------*/
+.divComun, .divContacto, .divConocenos, .divAdopciones, .divServicios, .divPresentacion {
   text-align: center;
   margin: 4%;
   font-size: x-large;
@@ -18,7 +21,9 @@ body {
   font-family: "Ysabeau Office", sans-serif;
 }
 
-.divComun, .divAdopciones, .divConocenos, .divPresentacion {
+/*-------------mapa-------------*/
+/*-------------mapa-------------*/
+.divComun, .divContacto, .divConocenos, .divAdopciones, .divServicios, .divPresentacion {
   text-align: center;
   margin: 4%;
   font-size: x-large;
@@ -57,7 +62,9 @@ body {
     height: 20%;
   }
 }
-.divComun, .divAdopciones, .divConocenos, .divPresentacion {
+/*-------------mapa-------------*/
+/*-------------mapa-------------*/
+.divComun, .divContacto, .divConocenos, .divAdopciones, .divServicios, .divPresentacion {
   text-align: center;
   margin: 4%;
   font-size: x-large;
@@ -108,7 +115,9 @@ body {
   }
 }
 /*-------Estilado de Main Index------------*/
-.divComun, .divAdopciones, .divConocenos, .divPresentacion {
+/*-------------mapa-------------*/
+/*-------------mapa-------------*/
+.divComun, .divContacto, .divConocenos, .divAdopciones, .divServicios, .divPresentacion {
   text-align: center;
   margin: 4%;
   font-size: x-large;
@@ -141,7 +150,9 @@ body {
 }
 
 /*-------Estilado de Main Servicios------------*/
-.divComun, .divAdopciones, .divConocenos, .divPresentacion {
+/*-------------mapa-------------*/
+/*-------------mapa-------------*/
+.divComun, .divContacto, .divConocenos, .divAdopciones, .divServicios, .divPresentacion {
   text-align: center;
   margin: 4%;
   font-size: x-large;
@@ -159,6 +170,7 @@ body {
   font-size: 2.5rem;
 }
 
+/*-------------acá llamé mi mapa-------------*/
 .card-text {
   text-align: center;
   align-items: center;
@@ -166,7 +178,12 @@ body {
 }
 
 .shadowCardServicios {
-  box-shadow: 0 0 8px 4px rgba(69, 49, 21, 0.3), 0 0 16px 8px rgba(69, 49, 21, 0.2), 0 0 24px 12px rgba(69, 49, 21, 0.1);
+  box-shadow: 0 0 8px 4px rgba(126, 156, 115, 0.3), 0 0 16px 8px rgba(126, 156, 115, 0.2), 0 0 24px 12px rgba(126, 156, 115, 0.1);
+  transition: 1s;
+}
+.shadowCardServicios:hover {
+  transform: translate(14px, 14px);
+  background-color: aqua;
 }
 
 .tituloServicios {
@@ -175,7 +192,9 @@ body {
 }
 
 /*-------Estilado de Main Adopciones------------*/
-.divComun, .divAdopciones, .divPresentacion, .divConocenos {
+/*-------------mapa-------------*/
+/*-------------mapa-------------*/
+.divComun, .divContacto, .divConocenos, .divAdopciones, .divPresentacion, .divServicios {
   text-align: center;
   margin: 4%;
   font-size: x-large;
@@ -205,7 +224,9 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(102, 51, 153, 0.5);
 }
 
-.divComun, .divPresentacion, .divConocenos, .divAdopciones {
+/*-------------mapa-------------*/
+/*-------------mapa-------------*/
+.divComun, .divContacto, .divConocenos, .divPresentacion, .divServicios, .divAdopciones {
   text-align: center;
   margin: 4%;
   font-size: x-large;
@@ -233,7 +254,9 @@ box-shadow: $sombra-verde;*/
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-.divComun, .divPresentacion, .divConocenos, .divAdopciones {
+/*-------------mapa-------------*/
+/*-------------mapa-------------*/
+.divComun, .divContacto, .divPresentacion, .divServicios, .divAdopciones, .divConocenos {
   text-align: center;
   margin: 4%;
   font-size: x-large;
@@ -250,6 +273,11 @@ box-shadow: $sombra-verde;*/
   background-position: center;
 }
 
+.divContacto {
+  order: 1;
+  width: 70%;
+}
+
 .card {
   background-color: #fff;
   border: 1px solid black;
@@ -263,10 +291,15 @@ box-shadow: $sombra-verde;*/
 
 .cardForm {
   box-shadow: 0 0 20px 10px rgba(255, 165, 0, 0.5), 0 0 40px 20px rgba(255, 0, 0, 0.5);
+  order: 2;
+  margin-bottom: 4%;
 }
 
 /*-------Estilado de Responsive------------*/
 @media (min-width: 400px) and (max-width: 779px) {
+  .divContacto {
+    order: 1;
+  }
   .bg-container {
     background-image: url("../Assets/img/background image 3.jpg");
     background-size: cover;
@@ -275,5 +308,7 @@ box-shadow: $sombra-verde;*/
   }
   .cardForm {
     width: 75%;
+    order: 2;
+    margin-bottom: 4%;
   }
 }

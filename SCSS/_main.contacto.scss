@@ -2,13 +2,18 @@
 @import 'mixins.scss';
 @import 'utilidades.scss';
 /*-------Estilado de Main Contacto------------*/
+
 .bg-container {
-    background-image: url('../Assets/img/background\ image\ 3.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url('../Assets/img/background\ image\ 3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+  .divContacto{
+    @extend .divComun;
+    order: 1;
+    width: 70%;
   }
-  
   .card {
     background-color: #fff;
     border: 1px solid black;
@@ -22,18 +27,26 @@
 
 .cardForm {
     box-shadow: $sombra-naranja;
+    order: 2;
+    margin-bottom: 4%;
   }
   
   /*-------Estilado de Responsive------------*/
   @media (min-width: 400px) and (max-width: 779px){
+    .divContacto{
+      @extend .divComun;
+      order: 1;
+    }
     .bg-container {
-        background-image: url('../Assets/img/background\ image\ 3.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
+      background-image: url('../Assets/img/background\ image\ 3.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
 .cardForm{
     width: 75% ;
+    order: 2;
+    margin-bottom: 4%;
 }
       
 }
