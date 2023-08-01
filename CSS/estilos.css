@@ -338,3 +338,15 @@ body {
     margin-bottom: 4%;
   }
 }
+/*-------------mapa-------------*/
+/*-------------mapa-------------*/
+.divComun, .divPresentacion, .divServicios, .divAdopciones, .divConocenos, .divContacto {
+  text-align: center;
+  margin: 4%;
+  font-size: x-large;
+  background: linear-gradient(180deg, #a9d1c5 0%, #d5e5dc 80%);
+  padding: 1.5%;
+  box-shadow: 0 0 8px 4px rgba(126, 156, 115, 0.3), 0 0 16px 8px rgba(126, 156, 115, 0.2), 0 0 24px 12px rgba(126, 156, 115, 0.1);
+}
+
+/*# sourceMappingURL=estilos.css.map */

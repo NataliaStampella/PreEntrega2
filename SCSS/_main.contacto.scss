@@ -2,6 +2,7 @@
 @import 'mixins.scss';
 @import 'utilidades.scss';
 
+
 .bg-container {
   background-image: url('../Assets/img/background\ image\ 3.jpg');
   background-size: cover;
@@ -12,10 +13,11 @@
     @extend .divComun;
     order: 1;
     width: 70%;
-    transition: 1s;
+        transition: 1s;
     &:hover{
-        transform: translateX(25px)
+        transform: translateX(25px);
     }
+
   }
   .card {
     background-color: #fff;
@@ -37,7 +39,7 @@
   /*-------Estilado de Responsive------------*/
   @media (min-width: 400px) and (max-width: 779px){
     .divContacto{
-      @extend .divComun;
+      
       order: 1;
     }
     .bg-container {
