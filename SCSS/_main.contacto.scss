@@ -1,7 +1,6 @@
 @import 'variables.scss';
 @import 'mixins.scss';
 @import 'utilidades.scss';
-/*-------Estilado de Main Contacto------------*/
 
 .bg-container {
   background-image: url('../Assets/img/background\ image\ 3.jpg');
@@ -13,6 +12,10 @@
     @extend .divComun;
     order: 1;
     width: 70%;
+    transition: 1s;
+    &:hover{
+        transform: translateX(25px)
+    }
   }
   .card {
     background-color: #fff;

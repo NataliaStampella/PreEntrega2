@@ -1,9 +1,13 @@
-/*-------Estilado de Main Index------------*/
 @import 'variables.scss';
 @import 'mixins.scss';
 @import 'utilidades.scss';
 .divPresentacion{
     @extend .divComun;
+    transition: 1s;
+    &:hover{
+        transform: translateX(25px)
+        
+    }
 }
 
 .carousel-item{

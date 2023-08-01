@@ -1,12 +1,14 @@
-/*-------Estilado de Main Servicios------------*/
 @import 'variables.scss';
 @import 'mixins.scss';
 @import 'utilidades.scss';
 
 .divServicios{
         @extend .divComun;
+        transition: 1s;
+        &:hover{
+        transform: translateX(25px)
     }
-
+    }
 
 .grupoServicios{
     margin-bottom: 4%;
@@ -29,7 +31,7 @@
     transition: 1s;
     &:hover{
         transform: translate(14px,14px);
-        background-color: aqua;
+        background-color: rgb(101, 183, 183);
     }
 }
 
