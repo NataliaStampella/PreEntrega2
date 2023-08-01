@@ -207,7 +207,7 @@ body {
 .shadowCardServicios {
   box-shadow: 0 0 8px 4px rgba(126, 156, 115, 0.3), 0 0 16px 8px rgba(126, 156, 115, 0.2), 0 0 24px 12px rgba(126, 156, 115, 0.1);
   transition: 1s;
-  height: 85vh;
+  height: 90vh;
 }
 .shadowCardServicios:hover {
   transform: translate(14px, 14px);
