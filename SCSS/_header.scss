@@ -5,6 +5,12 @@
 /*-------Estilado de Header ------------*/
 .navbar-light .navbar-nav .nav-link.colorVerde{
     color: #135e4f;
+    &:hover {
+        color: $color-rosa;
+        background-color: #8beef5;
+        border-color: #999999;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
 }
 
 .bgColorNav{

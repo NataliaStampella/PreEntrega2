@@ -1,3 +1,24 @@
 @import 'variables.scss';
 @import 'mixins.scss';
 @import 'utilidades.scss';
+
+.imgError404{
+    @include altura-ancho(60vh, 100%);
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+/*-------Estilado de Responsive------------*/
+@media (min-width: 400px) and (max-width: 779px){
+    
+    .imgError404{
+        @include altura-ancho(30vh, 50%);
+        margin-bottom: 3%;
+        margin-top: 3%;
+        align-items: center;
+        margin-left: 25%;
+    
+    }
+
+
+
+}
