@@ -1,6 +1,7 @@
 @import 'variables.scss';
 @import 'mixins.scss';
 @import 'utilidades.scss';
+
 .divPresentacion{
     @extend .divComun;
     transition: 1s;
@@ -8,8 +9,40 @@
         transform: translateX(25px)
         
     }
+    
 }
 
+
+.divPresentacionDos {
+    display: flex;
+    align-items: center;
+    background-color:papayawhip;
+    padding: 15px;
+    margin: 2px;
+    box-shadow: 0 0 40px rgba(89, 38, 82, 0.5), 0 0 40px papayawhip;
+  }
+  
+  .ulPresentacion{
+    list-style: none;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 3%;
+  }
+
+  .divPresentacionParrafo{
+    text-align: center;
+    font-size: $letras-parrafo;
+    width: 60%;
+  }
+
+  .divPresentacionImg{
+    
+    width: 40%;
+  }
+
+.estiloFuente{
+    font-weight: bold;
+}
 .carousel-item{
     @include altura-ancho(80vh, 100%);
   
@@ -23,11 +56,40 @@
 .divCarousel{
     padding-bottom: 4%;
 }
+/* probando estilado ancla */
+.enlacePresentacion {
+    font-weight: bold;
+    color: #06847a; /* Cambia este color al que desees */
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.enlacePresentacion:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ea1a90; /* Cambia este color al que desees */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.enlacePresentacion:hover {
+    color: #ea1a90; /* Cambia este color al que desees para el hover */
+}
+
+.enlacePresentacion:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+/* fin prueba estilado ancla */
 
 .publicidad-horizontal {
     display: block;
     margin: 0 auto;
-    @include altura-ancho(auto, 80%);
+    @include altura-ancho(20%, 50%);
     margin-top: 1%;
-    
   }

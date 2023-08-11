@@ -7,11 +7,11 @@
 /*-------Anidacion de Footer------------*/
 
 .estiloFooter{
-    background-color: $color-verde;
+    background-color: $color-gris;
 
 
 .navFooter{
-    background-color: $color-verde; 
+    background-color: $color-gris; 
 
 
 .divMapa{
@@ -31,10 +31,11 @@
 
   .redes{
     @include altura-ancho(80%, 80%);
+    
   }
   .list-group-item{  
   text-decoration: none;
-  background-color: $color-verde;
+  background-color: $color-gris;
   border: none;
 }
 
