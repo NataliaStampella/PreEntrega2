@@ -1,11 +1,17 @@
 $tipografia-general: 'Ysabeau Office', sans-serif;
 
 $color-verde: rgb(55, 91, 89);
+$color-teal: #06847a;
+$color-verde-light: rgb(146, 214, 214);
 $color-blanco: white;
-$color-rosa:rgb(190, 29, 139);
+$color-seashell: seashell;
+$color-rosa: rgb(190, 29, 139);
+$color-barbie: #ea1a90;
 $color-gris: rgb(162, 167, 166);
+$color-duraznito: rgba(255, 165, 0, 0.5);
 
-$degradado-color-verde: linear-gradient(180deg,#a9d1c5 0%, #d5e5dc 80%);
+
+$degradado-color-verde: linear-gradient(180deg, #a9d1c5 0%, #d5e5dc 80%);
 $degradado-color-arena: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 
 $sombra-verde: 0 0 8px 4px rgba(126, 156, 115, 0.3), 0 0 16px 8px rgba(126, 156, 115, 0.2), 0 0 24px 12px rgba(126, 156, 115, 0.1);
@@ -15,11 +21,11 @@ $sombra-naranja: 0 0 20px 10px rgba(255, 165, 0, 0.5), 0 0 40px 20px rgba(255, 0
 
 $letras-parrafo: x-large;
 $letras-descripcion: large;
+$letra-negrita: bold;
+$letra-mas-negrita: bolder;
 
 /*-------------mapa-------------*/
 $alineaciones: (
     text-align: center,
     align-items: center,
-)
-
-
+    )

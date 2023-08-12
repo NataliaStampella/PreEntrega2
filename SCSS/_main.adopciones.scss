@@ -2,26 +2,34 @@
 @import 'mixins.scss';
 @import 'utilidades.scss';
 
-.card-img-top{
+.card-img-top {
     @include altura-ancho(40vh, 100%);
 }
 
-.divAdopciones{
-   @extend .divComun;
-    margin-bottom: 3%; 
+.divAdopciones {
+    @extend .divComun;
+    margin-bottom: 3%;
     transition: 1s;
-    &:hover{
+
+    &:hover {
         transform: translateX(25px)
-    }  
+    }
 }
 
-.parrafoAdopciones{
-    font-size: larger;
+.parrafoAdopciones {
+    font-size: $letras-parrafo;
 }
 
-.cardAdopciones{
+.cardAdopciones {
     padding-bottom: 5%;
 }
-.shadowCardAdopciones{
+
+.shadowCardAdopciones {
     box-shadow: $sombra-lila-cards;
+    transition: 1s;
+
+    &:hover {
+        background-color: $color-seashell;
+        transform: translateX(25px)
+    }
 }

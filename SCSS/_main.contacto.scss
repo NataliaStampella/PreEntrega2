@@ -9,51 +9,60 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-  .divContacto{
-    @extend .divComun;
-    order: 1;
-    width: 70%;
-        transition: 1s;
-    &:hover{
-        transform: translateX(25px);
-    }
 
+.divContacto {
+  @extend .divComun;
+  order: 1;
+  width: 70%;
+  transition: 1s;
+
+  &:hover {
+    transform: translateX(25px);
   }
-  .card {
-    background-color: #fff;
-    border: 1px solid black;
-    
 }
-.botonFormulario{
-    background-color: rgba(255, 165, 0, 0.5);
-    font-size: larger;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+
+.parrafoContacto {
+  font-size: $letras-parrafo;
+}
+
+.estiloFuente {
+  font-weight: $letra-negrita;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid black;
+
+}
+
+.botonFormulario {
+  background-color: $color-duraznito;
+  font-size: larger;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .cardForm {
-    box-shadow: $sombra-naranja;
+  box-shadow: $sombra-naranja;
+  order: 2;
+  margin-bottom: 4%;
+}
+
+/*-------Estilado de Responsive------------*/
+@media (min-width: 400px) and (max-width: 779px) {
+  .divContacto {
+    order: 1;
+  }
+
+  .bg-container {
+    background-image: url('../Assets/img/background\ image\ 3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .cardForm {
+    width: 75%;
     order: 2;
     margin-bottom: 4%;
   }
-  
-  /*-------Estilado de Responsive------------*/
-  @media (min-width: 400px) and (max-width: 779px){
-    .divContacto{
-      
-      order: 1;
-    }
-    .bg-container {
-      background-image: url('../Assets/img/background\ image\ 3.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-.cardForm{
-    width: 75% ;
-    order: 2;
-    margin-bottom: 4%;
 }
-      
-}
-
-  

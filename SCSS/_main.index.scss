@@ -2,81 +2,94 @@
 @import 'mixins.scss';
 @import 'utilidades.scss';
 
-.carousel-item{
+.carousel-item {
     @include altura-ancho(80vh, 100%);
 }
-.carousel-item img{
+
+.carousel-item img {
     @include altura-ancho(100%, 100%);
-    object-fit:cover;
+    object-fit: cover;
 }
-.divCarousel{
+
+.divCarousel {
     padding-bottom: 4%;
     padding-top: 7%;
 }
-.divPresentacion{
+
+.divPresentacion {
     @extend .divComun;
     transition: 1s;
-    &:hover{
-        transform: translateX(25px) 
-    } 
+
+    &:hover {
+        transform: translateX(25px)
+    }
 }
-h1{
+
+h1 {
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     margin-top: 1.2%;
     margin-bottom: 3%;
     padding-top: 2%;
     padding-bottom: 1.2%;
-    font-weight: bolder;
+    font-weight: $letra-mas-negrita;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
-.tituloPresentacion{
-    color:teal;
+
+.tituloPresentacion {
+    color: teal;
     text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5) !important;
 }
-.divPresentacionCard{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-clip: border-box;
-  border: none;
-  border-radius: 0.25rem;
+
+.divPresentacionCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: none;
+    border-radius: 0.25rem;
 }
-  .ulPresentacion{
+
+.ulPresentacion {
     list-style: none;
     text-align: center;
     font-size: 1.5rem;
     margin: 5%;
-  }
-  .divPresentacionParrafo{
+}
+
+.divPresentacionParrafo {
     text-align: center;
     font-size: $letras-parrafo;
     background: radial-gradient(circle, rgb(242, 217, 237) 0%, white 80%);
     @include altura-ancho(100%, 90%)
-  }
-  .estiloImagenIndex{
+}
+
+.estiloImagenIndex {
     /*border-radius: 20px;*/
     @include altura-ancho(80%, 100%);
     margin-top: 10%;
     filter: grayscale(100%);
     transition: filter 0.3s;
-    &:hover{
+
+    &:hover {
         filter: brightness(1.2);
     }
-  }
-.estiloFuente{
+}
+
+.estiloFuente {
     font-weight: bold;
 }
 
 /*comienzo estilado ancla*/
 .enlacePresentacion {
     font-weight: bold;
-    color: #06847a; 
+    color: $color-teal;
     position: relative;
     transition: color 0.3s ease;
 }
+
 .enlacePresentacion:before {
     content: "";
     position: absolute;
@@ -84,18 +97,21 @@ h1{
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: #ea1a90;
+    background-color: $color-barbie;
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
 }
+
 .enlacePresentacion:hover {
-    color: #ea1a90; 
+    color: $color-barbie;
 }
+
 .enlacePresentacion:hover:before {
     visibility: visible;
     transform: scaleX(1);
 }
+
 /* fin estilado ancla */
 
 .publicidad-horizontal {
@@ -105,14 +121,13 @@ h1{
     margin-bottom: 2%;
     margin-top: 2%;
     @include altura-ancho(20%, 50%);
-    
-  }
 
-  @media (min-width: 400px) and (max-width: 779px){
-    .divPresentacionDos{
-       
-    }
-    .divPresentacionImg{
+}
+
+@media (min-width: 400px) and (max-width: 779px) {
+    .divPresentacionDos {}
+
+    .divPresentacionImg {
         width: 90%;
     }
-  }
+}

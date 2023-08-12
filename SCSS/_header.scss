@@ -3,39 +3,38 @@
 @import 'utilidades.scss';
 
 /*-------Estilado de Header ------------*/
-.navbar-light .navbar-nav .nav-link.colorVerde{
+.navbar-light .navbar-nav .nav-link.colorVerde {
     color: #135e4f;
+
     &:hover {
         color: $color-rosa;
         text-decoration: underline double;
         border-color: #999999;
         text-shadow: 2px 2px 4px rgba(255, 0, 128, 0.8);
-}
-}
-
-.bgColorNav{
-    background-image: $degradado-color-arena; 
+    }
 }
 
-.navLinkEstilo{
+.bgColorNav {
+    background-image: $degradado-color-arena;
+}
+
+.navLinkEstilo {
     font-weight: 400;
     font-size: 1.5rem;
     padding-right: 30px;
-    padding-left: 30px;   
+    padding-left: 30px;
 }
 
-
-.estiloLogo{
+.estiloLogo {
     margin-left: 100px;
     margin-right: 30px;
     @include altura-ancho(20%, 20%);
-    
 }
-/*-------Estilado de Responsive------------*/
-@media (min-width: 400px) and (max-width: 779px){
 
-    .estiloLogo{
-        margin-left:40%; 
+/*-------Estilado de Responsive------------*/
+@media (min-width: 400px) and (max-width: 779px) {
+    .estiloLogo {
+        margin-left: 40%;
         height: 20%;
-        
-    }}
+    }
+}

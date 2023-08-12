@@ -315,6 +315,10 @@ h1 {
   margin-bottom: 3%;
 }
 
+.estiloFuente {
+  font-weight: bold;
+}
+
 /*-------------mapa-------------*/
 /*-------------mapa-------------*/
 .divComun, .divContacto, .divConocenos, .divAdopciones, .divPresentacion, .divServicios {
@@ -340,7 +344,7 @@ h1 {
 }
 
 .parrafoAdopciones {
-  font-size: larger;
+  font-size: x-large;
 }
 
 .cardAdopciones {
@@ -349,6 +353,11 @@ h1 {
 
 .shadowCardAdopciones {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(102, 51, 153, 0.5);
+  transition: 1s;
+}
+.shadowCardAdopciones:hover {
+  background-color: seashell;
+  transform: translateX(25px);
 }
 
 /*-------------mapa-------------*/
@@ -375,6 +384,10 @@ h1 {
 
 .parrafoConocenos {
   font-size: x-large;
+}
+
+.estiloFuente {
+  font-weight: bold;
 }
 
 .shadowCardConocenos {
@@ -406,6 +419,14 @@ h1 {
 }
 .divContacto:hover {
   transform: translateX(25px);
+}
+
+.parrafoContacto {
+  font-size: x-large;
+}
+
+.estiloFuente {
+  font-weight: bold;
 }
 
 .card {
