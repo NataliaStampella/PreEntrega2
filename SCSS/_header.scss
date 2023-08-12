@@ -7,9 +7,9 @@
     color: #135e4f;
     &:hover {
         color: $color-rosa;
-        background-color: #8beef5;
+        text-decoration: underline double;
         border-color: #999999;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        text-shadow: 2px 2px 4px rgba(255, 0, 128, 0.8);
 }
 }
 

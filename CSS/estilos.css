@@ -38,9 +38,9 @@ body {
 }
 .navbar-light .navbar-nav .nav-link.colorVerde:hover {
   color: rgb(190, 29, 139);
-  background-color: #8beef5;
+  text-decoration: underline double;
   border-color: #999999;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 4px rgba(255, 0, 128, 0.8);
 }
 
 .bgColorNav {
@@ -139,43 +139,6 @@ body {
   box-shadow: 0 0 8px 4px rgba(126, 156, 115, 0.3), 0 0 16px 8px rgba(126, 156, 115, 0.2), 0 0 24px 12px rgba(126, 156, 115, 0.1);
 }
 
-.divPresentacion {
-  transition: 1s;
-}
-.divPresentacion:hover {
-  transform: translateX(25px);
-}
-
-.divPresentacionDos {
-  display: flex;
-  align-items: center;
-  background-color: papayawhip;
-  padding: 15px;
-  margin: 2px;
-  box-shadow: 0 0 40px rgba(89, 38, 82, 0.5), 0 0 40px papayawhip;
-}
-
-.ulPresentacion {
-  list-style: none;
-  text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: 3%;
-}
-
-.divPresentacionParrafo {
-  text-align: center;
-  font-size: x-large;
-  width: 60%;
-}
-
-.divPresentacionImg {
-  width: 40%;
-}
-
-.estiloFuente {
-  font-weight: bold;
-}
-
 .carousel-item {
   height: 80vh;
   width: 100%;
@@ -189,12 +152,78 @@ body {
 
 .divCarousel {
   padding-bottom: 4%;
+  padding-top: 7%;
 }
 
-/* probando estilado ancla */
+.divPresentacion {
+  transition: 1s;
+}
+.divPresentacion:hover {
+  transform: translateX(25px);
+}
+
+h1 {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin-top: 1.2%;
+  margin-bottom: 3%;
+  padding-top: 2%;
+  padding-bottom: 1.2%;
+  font-weight: bolder;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tituloPresentacion {
+  color: teal;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5) !important;
+}
+
+.divPresentacionCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.ulPresentacion {
+  list-style: none;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 5%;
+}
+
+.divPresentacionParrafo {
+  text-align: center;
+  font-size: x-large;
+  background: radial-gradient(circle, rgb(242, 217, 237) 0%, white 80%);
+  height: 100%;
+  width: 90%;
+}
+
+.estiloImagenIndex {
+  /*border-radius: 20px;*/
+  height: 80%;
+  width: 100%;
+  margin-top: 10%;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+.estiloImagenIndex:hover {
+  filter: brightness(1.2);
+}
+
+.estiloFuente {
+  font-weight: bold;
+}
+
+/*comienzo estilado ancla*/
 .enlacePresentacion {
   font-weight: bold;
-  color: #06847a; /* Cambia este color al que desees */
+  color: #06847a;
   position: relative;
   transition: color 0.3s ease;
 }
@@ -206,14 +235,14 @@ body {
   height: 2px;
   bottom: -5px;
   left: 0;
-  background-color: #ea1a90; /* Cambia este color al que desees */
+  background-color: #ea1a90;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out;
 }
 
 .enlacePresentacion:hover {
-  color: #ea1a90; /* Cambia este color al que desees para el hover */
+  color: #ea1a90;
 }
 
 .enlacePresentacion:hover:before {
@@ -221,15 +250,22 @@ body {
   transform: scaleX(1);
 }
 
-/* fin prueba estilado ancla */
+/* fin estilado ancla */
 .publicidad-horizontal {
   display: block;
-  margin: 0 auto;
+  border-top: 4px solid #000;
+  margin: auto;
+  margin-bottom: 2%;
+  margin-top: 2%;
   height: 20%;
   width: 50%;
-  margin-top: 1%;
 }
 
+@media (min-width: 400px) and (max-width: 779px) {
+  .divPresentacionImg {
+    width: 90%;
+  }
+}
 /*-------------mapa-------------*/
 /*-------------mapa-------------*/
 .divComun, .divContacto, .divConocenos, .divAdopciones, .divServicios, .divPresentacion {
@@ -271,7 +307,6 @@ body {
   height: 90vh;
 }
 .shadowCardServicios:hover {
-  transform: translate(14px, 14px);
   background-color: rgb(146, 214, 214);
 }
 
